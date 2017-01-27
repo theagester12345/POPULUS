@@ -1,2 +1,2 @@
 # POPULUS
-Android app development of the populus app
+Android app development for the populus app
