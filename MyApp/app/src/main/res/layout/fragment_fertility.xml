@@ -1,0 +1,235 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="3dp"
+    android:paddingRight="5dp"
+    android:paddingLeft="5dp"
+    tools:context="com.chris.mcdelait.myapplication.Fertility"
+    android:background="#213">
+
+
+    <TextView
+        android:text="How many children have you born alive ?   How many are still surviving ?"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textColor="#ffa"
+        android:layout_marginTop="34dp"
+        android:id="@+id/textView31"
+        android:layout_below="@+id/textView30"
+        android:textAlignment="center"
+        android:fontFamily="times"
+        android:background="#002" />
+
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="90dp"
+        app:srcCompat="@drawable/name"
+        android:id="@+id/imageView29"
+        android:layout_alignTop="@+id/imageView30"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/maleBorn"
+        android:background="#002" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="90dp"
+        app:srcCompat="@drawable/female"
+        android:id="@+id/imageView30"
+        android:layout_marginTop="22dp"
+        android:background="#002"
+        android:layout_below="@+id/textView36"
+        android:layout_toStartOf="@+id/femaleBorn" />
+
+    <TextView
+        android:text="Female"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView36"
+        android:textColor="#fff"
+        android:layout_alignBaseline="@+id/textView35"
+        android:layout_alignBottom="@+id/textView35"
+        android:layout_alignStart="@+id/imageView30"
+        android:layout_alignEnd="@+id/femaleBorn"
+        android:textAlignment="center"
+        android:background="#550000" />
+
+    <TextView
+        android:text="Male "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:id="@+id/textView35"
+        android:textColor="#fff"
+        android:textAlignment="center"
+        android:background="#550000"
+        android:layout_below="@+id/textView31"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/imageView29" />
+
+    <EditText
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:layout_marginLeft="3dp"
+android:hint="surviving"
+        android:textColorHint="#FFCC99"
+
+        android:id="@+id/maleSurviving"
+        android:background="#eed"
+        android:layout_alignBottom="@+id/imageView29"
+        android:layout_toEndOf="@+id/imageView29"
+        android:layout_marginBottom="11dp" />
+
+    <TextView
+        android:text="Mortality Information : \nHow provide the number of male and female persons who have died in the past  12 months (if any )"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:id="@+id/textView44"
+        android:textAlignment="center"
+        android:background="#002"
+        android:textColor="#ffa"
+        android:layout_below="@+id/imageView29"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ashfemale"
+        android:id="@+id/imageView36"
+        android:layout_alignTop="@+id/imageView35"
+        android:layout_alignStart="@+id/textView47"
+        android:background="#808080" />
+
+    <EditText
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/maleDead"
+        android:layout_alignTop="@+id/imageView35"
+        android:layout_toEndOf="@+id/imageView35"
+        android:layout_marginStart="22dp"
+        android:background="#ffd"
+        android:text="0" />
+
+    <EditText
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/femaleDead"
+        android:layout_alignTop="@+id/imageView36"
+        android:layout_alignEnd="@+id/textView47"
+        android:background="#fff"
+        android:text="0" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ashmale"
+        android:layout_marginTop="21dp"
+        android:id="@+id/imageView35"
+        android:background="#808080"
+        android:layout_below="@+id/textView46"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Male (Deceased)"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:id="@+id/textView46"
+        android:layout_below="@+id/textView44"
+        android:layout_alignParentStart="true"
+        android:textColor="#fff" />
+
+    <TextView
+        android:text="Female (deceased)"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView47"
+        android:layout_alignBaseline="@+id/textView46"
+        android:layout_alignBottom="@+id/textView46"
+        android:layout_toEndOf="@+id/maleBorn"
+        android:textColor="#fff" />
+
+    <EditText
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+         android:ems="10"
+        android:id="@+id/femaleBorn"
+        android:layout_marginLeft="3dp"
+        android:hint="born"
+        android:textColorHint="#FFCC99"
+        android:background="#eed"
+        android:layout_alignTop="@+id/imageView30"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:hint="born"
+        android:textColorHint="#FFCC99"
+        android:layout_marginLeft="3dp"
+        android:id="@+id/maleBorn"
+         android:background="#eed"
+        android:layout_alignTop="@+id/imageView29"
+        android:layout_toStartOf="@+id/imageView30"
+        android:textSize="18sp" />
+
+    <EditText
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/femaleSurviving"
+        android:hint="surviving"
+        android:textColorHint="#FFCC99"
+        android:background="#eed"
+        android:layout_alignBaseline="@+id/maleSurviving"
+        android:layout_alignBottom="@+id/maleSurviving"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/fertile"
+
+        android:id="@+id/imageView32"
+        android:background="#eea"
+        android:layout_alignTop="@+id/textView30"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/textView31" />
+
+    <TextView
+        android:text="   Fertility ,Mortality \nDetails"
+        android:layout_width="match_parent"
+        android:id="@+id/textView30"
+        android:textStyle="bold"
+        android:fontFamily="serif"
+        android:textAlignment="viewStart"
+        android:textSize="9pt"
+        android:background="#550000"
+        android:textColor="#fff"
+        android:layout_height="70dp"
+        android:layout_toEndOf="@+id/imageView35" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/ffz"
+        android:id="@+id/fertNext"
+        android:background="#550000"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/imageView30"
+        android:layout_marginTop="8dp" />
+
+</RelativeLayout>

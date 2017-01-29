@@ -1,0 +1,197 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+android:padding="4dp"
+    tools:context="com.chris.mcdelait.myapplication.HouseholdConditions">
+
+
+    <TextView
+        android:text="In What Type Of Dwelling Do the household live ?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView53"
+        android:layout_below="@+id/textView52"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:textStyle="normal|italic" />
+
+    <TextView
+        android:text="What is the main material used for building the wall of your dwelling ?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="43dp"
+        android:id="@+id/textView56"
+        android:layout_below="@+id/textView55"
+        android:layout_alignParentEnd="true"
+        android:layout_alignStart="@+id/outer_wall"
+        android:textStyle="normal|italic" />
+
+    <TextView
+        android:text="What is the main source of lighting for your dwelling ?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView55"
+        android:layout_marginTop="42dp"
+        android:layout_below="@+id/textView54"
+        android:layout_alignStart="@+id/textView54"
+        android:textStyle="normal|italic" />
+
+    <TextView
+        android:text="What is the main material used for the roof ?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="54dp"
+        android:id="@+id/textView54"
+        android:layout_below="@+id/textView53"
+        android:layout_alignStart="@+id/textView53"
+        android:textStyle="normal|italic" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/roof"
+        android:layout_below="@+id/imageView41"
+        android:layout_marginTop="21dp"
+        android:id="@+id/imageView42"
+        android:layout_toStartOf="@+id/textView55" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/house"
+        android:id="@+id/imageView41"
+        android:layout_below="@+id/textView52"
+        android:layout_toStartOf="@+id/textView53" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/housedepict"
+        android:id="@+id/imageView40"
+        android:layout_alignTop="@+id/textView52"
+        android:layout_above="@+id/textView53"
+        android:background="#000" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/electricity"
+        android:layout_alignBottom="@+id/textView55"
+        android:layout_toStartOf="@+id/textView54"
+        android:id="@+id/imageView43" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/water"
+        android:layout_alignBottom="@+id/textView57"
+        android:layout_toStartOf="@+id/textView54"
+        android:id="@+id/imageView45" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/dwelling_type"
+        android:entries="@array/dwelling_type"
+        android:layout_below="@+id/imageView41"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/imageView41" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/roofing"
+        android:entries="@array/roofing_system"
+        android:layout_below="@+id/textView54"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="11dp"
+        android:layout_toEndOf="@+id/imageView43" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView45"
+        android:layout_marginTop="15dp"
+        android:entries="@array/water_supply"
+        android:id="@+id/water_source"
+        android:layout_toEndOf="@+id/imageView45" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imageView45"
+        android:id="@+id/outer_wall"
+        android:entries="@array/outer_wall"
+        android:layout_toEndOf="@+id/imageView45" />
+
+    <TextView
+        android:text="What is the main source of drinking water for the household?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:id="@+id/textView57"
+        android:layout_below="@+id/textView56"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/imageView42"
+        android:textStyle="normal|italic" />
+
+    <TextView
+        android:text="continue on next page ..."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:id="@+id/textView59"
+        android:layout_below="@+id/water_source"
+        android:layout_alignEnd="@+id/textView54"
+        android:layout_marginTop="23dp"
+        android:textAlignment="center"
+        android:textStyle="normal|italic"
+        android:fontFamily="times"
+        android:textSize="14sp"
+        android:textColor="#300" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView55"
+        android:entries="@array/lighting_source"
+        android:layout_marginTop="10dp"
+        android:id="@+id/lightSource"
+        android:layout_alignStart="@+id/textView56" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/wall"
+        android:id="@+id/imageView44"
+        android:layout_below="@+id/lightSource"
+        android:layout_toStartOf="@+id/textView56" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ffz"
+        android:id="@+id/condNext"
+        android:background="#000"
+        android:layout_above="@+id/textView53"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/textView52" />
+
+    <TextView
+        android:text="Household \n              Conditions"
+        android:textSize="11pt"
+        android:fontFamily="times"
+        android:id="@+id/textView52"
+        android:textAlignment="viewStart"
+        android:layout_height="70dp"
+        android:background="#000"
+        android:textColor="#ffd"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/imageView40"
+        android:layout_width="220dp"
+        android:textStyle="normal|italic" />
+
+</RelativeLayout>

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "484582822459",
+    "firebase_url": "https://myapp-3aada.firebaseio.com",
+    "project_id": "myapp-3aada",
+    "storage_bucket": "myapp-3aada.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:484582822459:android:3feb96848e38bdb6",
+        "android_client_info": {
+          "package_name": "com.chris.mcdelait.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "484582822459-p8m0hsmetrvdon8okmltt2stueqhr9pp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDDMwAMcvO6D6XuUxMaNAfbE0VGPqleGPY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

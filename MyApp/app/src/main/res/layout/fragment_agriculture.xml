@@ -1,0 +1,213 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    tools:context="com.chris.mcdelait.myapplication.AgricultureFrag"
+    android:background="#002">
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/livestockReared"
+        android:hint="eg. Cattle"
+        android:background="#dfc"
+        android:layout_above="@+id/textView51"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/textView12" />
+
+    <TextView
+        android:text="Query on livestock reared:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="times"
+        android:textColor="#fff"
+        android:textStyle="italic"
+        android:layout_marginTop="27dp"
+        android:id="@+id/textView12"
+        android:layout_below="@+id/textView50"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/textView50" />
+
+    <TextView
+        android:text="\nAgricultural Activity "
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/imageView33"
+        android:layout_marginTop="14dp"
+        android:id="@+id/textView49"
+        android:textAlignment="center"
+        android:layout_alignParentStart="true"
+        android:fontFamily="times"
+        android:textColor="#fff"
+        android:background="#483D8B"
+        android:layout_height="70dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/crop"
+        android:id="@+id/imageView33"
+        android:layout_alignTop="@+id/textView49"
+        android:layout_alignParentStart="true"
+        android:background="#dd0"
+        android:layout_above="@+id/textView48" />
+
+    <CheckBox
+        android:text="Fish Farming"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fishFarming"
+        android:layout_alignBaseline="@+id/livestockRearing"
+        android:layout_alignBottom="@+id/livestockRearing"
+        android:layout_alignStart="@+id/treeGrowing"
+        android:background="#9FAFDF"
+        android:layout_alignParentEnd="true"
+        android:textColor="#dfc" />
+
+    <CheckBox
+        android:text="Livestock Rearing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="33dp"
+        android:id="@+id/livestockRearing"
+        android:layout_below="@+id/cropFarming"
+        android:layout_toEndOf="@+id/imageView33"
+        android:background="#9FAFDF"
+        android:textColor="#dfc" />
+
+    <CheckBox
+        android:text="Crop Farming"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="times"
+        android:layout_marginTop="15dp"
+        android:id="@+id/cropFarming"
+        android:layout_below="@+id/textView48"
+        android:layout_alignStart="@+id/livestockRearing"
+        android:textColor="#dfc"
+        android:background="#9FAFDF"
+        android:layout_toStartOf="@+id/imageView37" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/crops"
+        android:layout_alignBottom="@+id/cropFarming"
+        android:id="@+id/imageView34"
+        android:layout_toStartOf="@+id/cropFarming" />
+
+    <CheckBox
+        android:text="Tree Growing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/treeGrowing"
+        android:layout_alignBaseline="@+id/cropFarming"
+        android:layout_alignBottom="@+id/cropFarming"
+        android:background="#9FAFDF"
+        android:layout_alignParentEnd="true"
+        android:textColor="#dfc" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/tree"
+        android:id="@+id/imageView37"
+        android:layout_toEndOf="@+id/livestockRearing"
+        android:layout_alignTop="@+id/treeGrowing" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/livestock"
+        android:layout_alignBottom="@+id/livestockRearing"
+        android:id="@+id/imageView38"
+        android:layout_toStartOf="@+id/livestockRearing" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/fish"
+        android:layout_alignTop="@+id/fishFarming"
+        android:layout_alignEnd="@+id/imageView37"
+        android:id="@+id/imageView39"
+        android:layout_toEndOf="@+id/livestockRearing"
+        android:layout_alignBottom="@+id/fishFarming" />
+
+    <TextView
+        android:text="Query on fish reared  :"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="times"
+        android:textColor="#fff"
+        android:textStyle="italic"
+        android:layout_marginTop="12dp"
+        android:id="@+id/textView51"
+        android:layout_below="@+id/textView12"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/fishReared"
+        android:hint="eg. Tilapia"
+        android:background="#dfc"
+        android:layout_alignBaseline="@+id/textView51"
+        android:layout_alignBottom="@+id/textView51"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/textView12" />
+
+    <TextView
+        android:text="Do you cultivate crops or tree plant, rear livestock or breed fish for sale or family gain?"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:textStyle="bold"
+        android:id="@+id/textView48"
+        android:layout_width="320dp"
+        android:fontFamily="times"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:background="#00BBBB"
+        android:layout_below="@+id/textView49"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="Query on Crops/Tree growing :  Type Of Cropping /Tree Growing Method ?"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:fontFamily="times"
+        android:textStyle="italic"
+        android:layout_marginTop="52dp"
+        android:id="@+id/textView50"
+        android:layout_below="@+id/livestockRearing"
+        android:layout_alignParentStart="true" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/cropping_method"
+        android:id="@+id/croppingType"
+        android:background="#9FAFDF"
+
+        android:layout_alignTop="@+id/textView50"
+        android:layout_toEndOf="@+id/textView50"
+        android:layout_marginTop="10dp" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ffz"
+        android:id="@+id/agricNext"
+        android:background="#483D8B"
+        android:layout_alignTop="@+id/textView49"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="9dp" />
+</RelativeLayout>

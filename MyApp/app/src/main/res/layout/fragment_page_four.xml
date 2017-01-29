@@ -1,0 +1,217 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     tools:context="com.chris.mcdelait.myapplication.PageFour"
+    android:background="#F6A600"
+    android:id="@+id/pagefour">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/computerpc"
+        android:id="@+id/imageView31"
+        android:layout_alignTop="@+id/textView43"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/internet_facility"
+        android:layout_alignBottom="@+id/have_computer" />
+
+    <RadioGroup
+        android:layout_width="872px"
+        android:layout_height="172px"
+        android:id="@+id/have_computer"
+        android:layout_below="@+id/textView43"
+        android:layout_alignEnd="@+id/textView43"
+        android:layout_toEndOf="@+id/imageView31">
+
+        <RadioButton
+            android:text="Yes"
+            android:layout_width="match_parent"
+            android:layout_height="22dp"
+            android:id="@+id/radioButton13"
+            android:textAlignment="center"
+            android:background="#ffd"
+            android:textStyle="normal|bold" />
+
+        <RadioButton
+            android:text="No"
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:id="@+id/radioButton14"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:background="#fff"
+            android:textStyle="normal|bold" />
+    </RadioGroup>
+
+    <TextView
+        android:text="Do you own a laptop or any desktop computer ?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView43"
+        android:layout_marginTop="9dp"
+        android:fontFamily="times"
+        android:textSize="8pt"
+
+        android:textStyle="normal|italic"
+        android:textColor="#fff"
+        android:background="#000044"
+        android:layout_below="@+id/internet_facility"
+        android:layout_alignEnd="@+id/internet_facility"
+        android:layout_toEndOf="@+id/imageView31" />
+
+    <TextView
+        android:text="Information Communcation Infrastructure Details"
+        android:layout_width="wrap_content"
+        android:layout_height="195px"
+        android:id="@+id/textView25"
+        android:fontFamily="times"
+        android:textSize="10pt"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:textAlignment="center"
+        android:background="#003333"
+        android:textColor="#fff"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <RadioGroup
+        android:layout_width="872px"
+        android:layout_height="170px"
+        android:id="@+id/have_phone"
+        android:background="#CCFFFF"
+        android:layout_below="@+id/textView34"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/imageView27">
+
+        <RadioButton
+            android:text="Yes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioButton11"
+            android:background="#ffd"
+            android:textAlignment="center"
+            android:textStyle="normal|bold" />
+
+        <RadioButton
+            android:text="No"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+android:background="#fff"
+            android:id="@+id/radioButton10"
+            android:textAlignment="center"
+            android:textStyle="normal|bold" />
+    </RadioGroup>
+
+    <ImageView
+        android:layout_width="150px"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/cellphone"
+        android:id="@+id/imageView27"
+        android:layout_alignBottom="@+id/have_phone"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/textView34" />
+
+    <TextView
+        android:text="\nDo you own a mobile phone ?"
+        android:layout_width="700px"
+        android:layout_height="150px"
+        android:id="@+id/textView34"
+        android:background="#000044"
+        android:textColor="#fff"
+        android:textStyle="italic"
+        android:fontFamily="times"
+        android:textSize="8pt"
+        android:textAlignment="center"
+        android:layout_below="@+id/textView25"
+        android:layout_marginTop="8dp"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/imageView27" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/internetsignal"
+        android:id="@+id/imageView28"
+        android:paddingRight="7dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/have_phone" />
+
+    <RadioGroup
+        android:layout_width="717px"
+        android:layout_height="170px"
+        android:id="@+id/internet_facility"
+        android:background="#CCFFFF"
+        android:layout_below="@+id/textView37"
+        android:layout_alignEnd="@+id/have_phone"
+        android:layout_toEndOf="@+id/imageView28">
+
+        <RadioButton
+            android:text="Yes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioButton12"
+            android:background="#ffd"
+            android:textAlignment="center"
+            android:textStyle="normal|bold" />
+
+        <RadioButton
+            android:text="No"
+            android:background="#fff"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioButton15"
+            android:textStyle="normal|bold" />
+    </RadioGroup>
+
+    <Button
+        android:text="Continue"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:textAllCaps="false"
+        android:paddingLeft="15dp"
+        android:paddingRight="6dp"
+        android:background="#2F4F4F"
+        android:textColor="#ffb"
+        android:shadowDx="3"
+        android:shadowDy="4"
+        android:shadowColor="#534"
+        android:fontFamily="times"
+        android:textStyle="bold"
+        android:id="@+id/saveButton"
+        android:textSize="8pt"
+        android:textAlignment="center"
+        android:elevation="5dp"
+        android:layout_below="@+id/have_computer"
+        android:layout_marginTop="14dp"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/imageView31" />
+
+    <TextView
+        android:text="Do you  use internet facility (at home, internet cafe, on phone, other mobile device? "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView37"
+        android:textSize="8pt"
+
+        android:background="#000044"
+        android:fontFamily="times"
+        android:textStyle="italic"
+        android:textColor="#fff"
+        android:layout_alignBottom="@+id/imageView28"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/imageView28" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/saveButton"
+        android:layout_toStartOf="@+id/saveButton"
+        android:layout_marginEnd="27dp"
+        android:id="@+id/viewtextt"
+        android:text="..." />
+</RelativeLayout>

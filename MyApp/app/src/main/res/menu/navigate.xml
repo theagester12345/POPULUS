@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+<item
+    android:title="Agric Details"
+    android:id="@+id/agricdetails">
+
+</item>
+    <item
+        android:title="Fertility,Mortality"
+        android:id="@+id/fertinfo">
+        </item>
+    <item
+        android:title="Employment,Disability"
+        android:id="@+id/disabinfo">
+        </item>
+    <item
+        android:title="Education,Reli...,Tribe"
+        android:id="@+id/tribeInfo">
+      </item>
+        <item
+            android:title="Birth and location"
+            android:id="@+id/basicInfo">
+
+       </item>
+    <item
+        android:title="Name and Gender"
+        android:id="@+id/nameAndGender">
+        </item>
+    <item
+        android:title="Househ.. Conditions I"
+        android:id="@+id/householdI"
+        ></item>
+    <item
+        android:title="Househ.. Conditions II"
+        android:id="@+id/householdII"
+        ></item>
+    <item
+        android:title="To End/Last Entries"
+        android:id="@+id/lastpage">
+
+    </item>
+</menu>

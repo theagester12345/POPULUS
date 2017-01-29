@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/record"
+            android:icon="@drawable/record"
+            android:title="Record Household" />
+        <item
+            android:id="@+id/view_stats"
+            android:icon="@drawable/stats"
+            android:title="View Stats"
+
+            />
+
+    </group>
+
+    <item android:title="Leave">
+        <menu>
+            <item
+                android:id="@+id/exit"
+                android:icon="@drawable/exit"
+                android:title="Exit" />
+
+        </menu>
+    </item>
+
+</menu>

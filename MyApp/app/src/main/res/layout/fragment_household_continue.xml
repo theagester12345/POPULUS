@@ -1,0 +1,192 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.chris.mcdelait.myapplication.HouseholdContinue">
+
+    <TextView
+        android:text="Household \n          Conditions"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="11dp"
+        android:textSize="11pt"
+        android:fontFamily="times"
+        android:id="@+id/textView52"
+        android:textAlignment="viewStart"
+        android:layout_alignParentTop="true"
+        android:layout_height="70dp"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/imageView46"
+        android:background="#000"
+        android:textColor="#ffd" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/housedepict"
+        android:id="@+id/imageView46"
+        android:layout_alignTop="@+id/textView52"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="15dp"
+        android:layout_above="@+id/textView58"
+        android:background="#000" />
+
+    <TextView
+        android:text="Who owns the dwelling?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView52"
+        android:layout_marginTop="27dp"
+        android:id="@+id/textView58"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/imageView46"
+        android:textAlignment="center"
+        android:textStyle="normal|italic" />
+
+    <TextView
+        android:text="What type of toilet facility is usually used by the household?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView60"
+        android:layout_marginTop="43dp"
+        android:id="@+id/textView61"
+        android:layout_alignParentEnd="true"
+        android:textAlignment="center"
+        android:layout_alignStart="@+id/textView60"
+        android:textStyle="normal|italic" />
+
+    <TextView
+        android:text="How does the household dispose of rubbish (refuse)?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:id="@+id/textView62"
+        android:layout_below="@+id/textView61"
+        android:textAlignment="center"
+        android:layout_alignStart="@+id/textView61"
+        android:textStyle="normal|italic" />
+
+    <TextView
+        android:text="What is the present holding/tenancy arrangement of this dwelling?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="38dp"
+        android:id="@+id/textView60"
+        android:textAlignment="center"
+        android:layout_below="@+id/textView58"
+        android:layout_alignParentEnd="true"
+        android:layout_alignStart="@+id/textView58"
+        android:textStyle="normal|italic" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView58"
+        android:id="@+id/ownership"
+        android:entries="@array/dwelling_ownership"
+        android:layout_alignStart="@+id/textView58" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView60"
+        android:entries="@array/tenure_arrangement"
+        android:layout_alignStart="@+id/textView60"
+        android:id="@+id/tenancy" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toilet_facility"
+        android:entries="@array/toilet_facility"
+        android:layout_below="@+id/textView61"
+        android:layout_alignParentEnd="true"
+        android:layout_alignStart="@+id/textView61" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView62"
+        android:entries="@array/solid_waste_disposal"
+        android:id="@+id/solid_waste"
+        android:layout_alignStart="@+id/textView62" />
+
+    <TextView
+        android:text="How does your household dispose of liquid waste?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:id="@+id/textView63"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:layout_below="@+id/solid_waste"
+        android:layout_alignParentEnd="true"
+        android:layout_alignStart="@+id/solid_waste"
+        android:textStyle="normal|italic" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/own"
+        android:id="@+id/imageView47"
+        android:layout_below="@+id/ownership"
+        android:layout_toStartOf="@+id/textView60" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/head"
+        android:id="@+id/imageView48"
+        android:layout_above="@+id/imageView47"
+        android:layout_marginBottom="8dp"
+        android:layout_below="@+id/textView52"
+        android:layout_alignStart="@+id/imageView46"
+        android:layout_toStartOf="@+id/textView52" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/wc"
+        android:layout_below="@+id/tenancy"
+        android:layout_alignStart="@+id/imageView47"
+        android:id="@+id/imageView49" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/liquid_waste"
+        android:entries="@array/liquid_waste_disposal"
+        android:layout_below="@+id/textView63"
+        android:layout_toEndOf="@+id/imageView51" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/sewage"
+        android:layout_alignBottom="@+id/textView63"
+        android:layout_toStartOf="@+id/textView63"
+        android:id="@+id/imageView51" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/waste"
+        android:id="@+id/imageView50"
+        android:layout_alignBottom="@+id/solid_waste"
+        android:layout_alignStart="@+id/imageView51"
+        android:layout_marginBottom="15dp" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ffz"
+        android:layout_above="@+id/textView58"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="7dp"
+        android:id="@+id/continueNext"
+        android:background="#000"
+        android:layout_alignTop="@+id/textView52" />
+
+
+</RelativeLayout>
